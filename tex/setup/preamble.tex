@@ -1,0 +1,45 @@
+\documentclass[12pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{geometry}
+\usepackage{svg}
+\usepackage{bm}
+\usepackage[shortlabels]{enumitem}
+% Theme choice:
+\usetheme{Rochester}
+
+%\setbeamertemplate{footline}[frame number]{}
+\captionsetup[figure]{labelformat=empty}
+
+\beamertemplatenavigationsymbolsempty
+
+
+\AtBeginSection[]{
+ \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+\AtBeginSubsection[]{
+	\begin{frame}{\secname}
+	\vfill
+	\centering
+	\begin{beamercolorbox}[sep=8pt, center, shadow=true, rounded=true]{title}
+		\usebeamerfont{title}\insertsubsectionhead\par 
+	\end{beamercolorbox}
+	\vfill
+	\end{frame}
+}
+
+ 
